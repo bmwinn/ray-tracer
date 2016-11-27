@@ -1,0 +1,88 @@
+Reflection on simple_reflect3
+
+Pixel: [320, 145] Ray: {0 0 14} -> {0.00102203 -0.193167 -0.981165} T=12.4377 Color: (255, 255, 222)
+----
+Iteration type: Primary
+Ray: {0 0 14} -> {0.00102203 -0.193167 -0.981165}
+Ambient: 0.4, 0.368, 0.204
+Diffuse: 0, 0, 0
+Specular: 0, 0, 0
+----
+Iteration type: Reflection
+Ray: {0.0127117 -2.40256 1.79654} -> {0.00469034 -0.88649 -0.462724}
+Ambient: 0.116, 0.1, 0.196
+Diffuse: 0.0206799, 0.0178275, 0.0349419
+Specular: 0, 0, 0
+----
+Iteration type: Reflection
+Ray: {0.0211636 -4 0.962719} -> {0.00469034 0.88649 -0.462724}
+Ambient: 0.4, 0.368, 0.204
+Diffuse: 0, 0, 0
+Specular: 0, 0, 0
+----
+Iteration type: Reflection
+Ray: {0.0266152 -2.96964 0.424897} -> {0.0214227 -0.980449 -0.195602}
+Ambient: 0.116, 0.1, 0.196
+Diffuse: 0.0206283, 0.017783, 0.0348548
+Specular: 0, 0, 0
+----
+Iteration type: Reflection
+Ray: {0.0491284 -4 0.219338} -> {0.0214227 0.980449 -0.195602}
+Ambient: 0.4, 0.368, 0.204
+Diffuse: 0, 0, 0
+Specular: 0, 0, 0
+----
+Iteration type: Reflection
+Ray: {0.070998 -2.9991 0.0196561} -> {0.067852 -0.980816 -0.182747}
+Ambient: 0.116, 0.1, 0.196
+Diffuse: 0.0205964, 0.0177555, 0.0348009
+Specular: 0, 0, 0
+
+refraction on refract2
+
+B
+Pixel: [315, 185] Ray: {0 0 14} -> {-0.00931474 -0.112812 -0.993573} T=11.3627 Color: (98, 0, 98)
+----
+Iteration type: Primary
+Ray: {0 0 14} -> {-0.00931474 -0.112812 -0.993573}
+Hit Object ID (1) at T = 11.3627, Intersection = {-0.105841 -1.28185 2.71029}
+Ambient: 0.2, 0, 0.2
+Diffuse: 0.0838023, 0, 0.0838023
+Specular: 0, 0, 0
+----
+Iteration type: Refraction
+Ray: {-0.105841 -1.28185 2.71028} -> {0.0028512 0.0345313 -0.9994}
+Hit Object ID (1) at T = 5.50644, Intersection = {-0.090141 -1.09171 -2.79286}
+Ambient: 0.2, 0, 0.2
+Diffuse: 0, 0, 0
+Specular: 0, 0, 0
+----
+Iteration type: Refraction
+Ray: {-0.0901408 -1.09171 -2.79287} -> {0.0149547 0.181118 -0.983348}
+No intersection.
+
+————
+
+F
+Pixel: [220, 240] Ray: {0 0 14} -> {-0.202976 0.00101997 -0.979183} T=12.7469 Color: (151, 26, 152)
+----
+Iteration type: Primary
+Ray: {0 0 14} -> {-0.202976 0.00101997 -0.979183}
+Hit Object ID (1) at T = 12.7469, Intersection = {-2.58732 0.0130014 1.51843}
+Ambient: 0.2, 0, 0.2
+Diffuse: 0.235824, 0, 0.235824
+Specular: 0, 0, 0
+----
+Iteration type: Refraction
+Ray: {-2.58732 0.0130014 1.51842} -> {0.244935 -0.00123081 -0.969539}
+Hit Object ID (1) at T = 4.21182, Intersection = {-1.55569 0.00781746 -2.5651}
+Ambient: 0.2, 0, 0.2
+Diffuse: 0, 0, 0
+Specular: 0, 0, 0
+----
+Iteration type: Refraction
+Ray: {-1.55569 0.00781743 -2.56511} -> {0.643684 -0.00323455 -0.765285}
+Hit Object ID (2) at T = 2.35762, Intersection = {-0.0381248 0.00019158 -4.36936}
+Ambient: 0.152, 0.276, 0.16
+Diffuse: 0.0735589, 0.133567, 0.0774304
+Specular: 0, 0, 0
